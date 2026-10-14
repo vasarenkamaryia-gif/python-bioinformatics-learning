@@ -312,3 +312,42 @@ print(vif.round(3))
 
 print("\nDiagnostics figure saved in:", figures_dir / "cognitive_model_diagnostics.png")
 print("\nAnalysis finished.")
+
+# ============================================================
+# 9. SLEEP: is the association non-linear? (sleep categories)
+# ============================================================
+# Short: less than 7 hours, normal: 7-9 hours (reference), long: more than 9 hours
+d["sleep_cat"] = pd.cut(
+    d["SLD010H"],
+    bins=[0, 6.99, 9, 24],
+    labels=["short_lt7", "normal_7_9", "long_gt9"],
+).astype(str)
+print("\nParticipants by sleep category:")
+print(d["sleep_cat"].value_counts())
+
+sleep_formula = (
+    "C(DMDEDUC2) + RIDAGEYR + C(RIAGENDR)"
+    ' + C(sleep_cat, Treatment(reference="normal_7_9"))'
+    " + BMXBMI + C(SMQ020) + C(DIQ010)"
+)
+
+sleep_rows = []
+for y in outcomes:
+    m = smf.ols(f"{y} ~ {sleep_formula}", data=d).fit(cov_type="HC3")
+    ci = m.conf_int()
+    for term in m.params.index:
+        if "sleep_cat" in term:
+            sleep_rows.append({
+                "outcome": y,
+                "term": term.split("[T.")[-1].rstrip("]"),
+                "coef": m.params[term],
+                "ci_low": ci.loc[term, 0],
+                "ci_high": ci.loc[term, 1],
+                "p_HC3": m.pvalues[term],
+            })
+
+sleep_table = pd.DataFrame(sleep_rows)
+sleep_table.round(4).to_csv(tables_dir / "sleep_categories.csv", index=False)
+print("\nSleep categories vs normal sleep (7-9 hours), HC3:")
+print(sleep_table.round(3))
+print("\nSleep analysis finished.")

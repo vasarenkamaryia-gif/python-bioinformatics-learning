@@ -1,8 +1,8 @@
-# Data
-data/
+# Raw data (large files, downloaded from the source)
+**/data/raw/
 
-# Results
-results/
+# Virtual environment
+.venv/
 
 # PyCharm
 .idea/

@@ -1,0 +1,7 @@
+outcome,term,coef,ci_low,ci_high,p_HC3
+CFDDS,long_gt9,-4.1819,-8.7912,0.4274,0.0754
+CFDDS,short_lt7,-1.1321,-2.6773,0.4131,0.151
+CFDAST,long_gt9,-1.5068,-3.1519,0.1383,0.0726
+CFDAST,short_lt7,-0.3802,-0.9684,0.2081,0.2053
+CFDCSR,long_gt9,-0.3714,-1.2081,0.4653,0.3843
+CFDCSR,short_lt7,0.2583,0.0275,0.489,0.0283

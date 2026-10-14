@@ -30,7 +30,8 @@ Predictors: education (5 levels), age, sex, sleep duration (hours), BMI, smoking
 - Model diagnostics: residuals vs fitted values, Q-Q plots, variance inflation factors
   (all below 2.4, no multicollinearity concern).
 - Effect sizes: coefficients with 95% confidence intervals and standardized effects
-  (test score in SD units).
+  (test score in SD units). 
+- Non-linearity of sleep: sleep duration was also analysed in three categories (<7 h, 7–9 h as the reference, >9 h) with the same adjustment and HC3 standard errors.
 
 ## Key results
 All estimates are adjusted for the other predictors. Values are coefficients (95% CI) in test points.
@@ -58,8 +59,12 @@ Main findings:
 - BMI associations were very small (about +0.3 words per 5 BMI units for Animal Fluency). BMI was higher
   in people with diabetes (mean 31.2 vs 28.3), and the BMI coefficient for Animal Fluency was slightly
   larger after adjusting for diabetes (0.040 to 0.055), but this change is small.
-- No linear association with sleep duration or smoking history was detected. This does not exclude
-  non-linear effects.
+- No linear association with sleep duration or smoking history was detected.
+- Sleep categories (reference: 7–9 h, n = 812): people sleeping more than 9 hours (n = 40) scored lower on Digit 
+  Symbol (−4.2, 95% CI −8.8 to 0.4) and Animal Fluency (−1.5, 95% CI −3.2 to 0.1), but the intervals include zero 
+  and the group is small. Short sleep (<7 h, n = 480) was not associated with Digit Symbol or Animal Fluency and was 
+  associated with slightly higher Delayed Recall (+0.26, 95% CI 0.03 to 0.49, p = 0.028), a small and unexpected result 
+  that may be due to chance given the number of comparisons.
 
 ## Interpretation
 The strong association with education is consistent with the cognitive reserve hypothesis: more years of
@@ -79,7 +84,7 @@ All associations are cross-sectional and do not show causal effects.
   have lower cognitive performance, so the associations with education and age may be underestimated.
 - Sleep, smoking and diabetes are self-reported.
 - Age is top-coded at 80 in NHANES (80 means 80 years and older).
-- The borderline diabetes group is small (n = 45).
+- The long sleep group (more than 9 hours) is small (n = 40), so the estimates for it are imprecise.
 - Several outcomes and many coefficients were tested, so small associations (p around 0.01–0.05)
   should be interpreted cautiously.
 
