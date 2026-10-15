@@ -1,15 +1,36 @@
-import pandas as pd
+"""
+Step 1: prepare the NHANES 2011-2012 analysis dataset (participants aged 60+).
+
+Input:  data/raw/*.XPT  (CFQ_G, SLQ_G, DEMO_G, BMX_G, SMQ_G, DIQ_G)
+Output: data/processed/nhanes_cognitive_60plus.csv
+"""
+
 from pathlib import Path
 
-folder = Path(r"D:\Documents\Desktop\Bioinformatics\ПРОЕКТ 1")
+import pandas as pd
+
+# The script is in nhanes-cognition/scripts/, so the project root is one level up
+project_dir = Path(__file__).resolve().parent.parent
+raw_dir = project_dir / "data" / "raw"
+processed_dir = project_dir / "data" / "processed"
+processed_dir.mkdir(parents=True, exist_ok=True)
+
+# Check that all raw files are in data/raw/
+required_files = [
+    "CFQ_G.XPT", "SLQ_G.XPT", "DEMO_G.XPT",
+    "BMX_G.XPT", "SMQ_G.XPT", "DIQ_G.XPT",
+]
+missing_files = [name for name in required_files if not (raw_dir / name).exists()]
+if missing_files:
+    raise FileNotFoundError(f"Missing files in {raw_dir}: {missing_files}")
 
 # Load the datasets
-cfq = pd.read_sas(folder / "CFQ_G.XPT")
-slq = pd.read_sas(folder / "SLQ_G.XPT")
-demo = pd.read_sas(folder / "DEMO_G.XPT")
-bmx = pd.read_sas(folder / "BMX_G.XPT")
-smq = pd.read_sas(folder / "SMQ_G.XPT")
-diq = pd.read_sas(folder / "DIQ_G.xpt")
+cfq = pd.read_sas(raw_dir / "CFQ_G.XPT")
+slq = pd.read_sas(raw_dir / "SLQ_G.XPT")
+demo = pd.read_sas(raw_dir / "DEMO_G.XPT")
+bmx = pd.read_sas(raw_dir / "BMX_G.XPT")
+smq = pd.read_sas(raw_dir / "SMQ_G.XPT")
+diq = pd.read_sas(raw_dir / "DIQ_G.XPT")
 
 # Keep only the variables we need
 cfq = cfq[["SEQN", "CFDDS", "CFDAST", "CFDCSR"]]
@@ -29,7 +50,7 @@ df = df.merge(diq, on="SEQN", how="inner")
 # Keep participants aged 60+
 df = df[df["RIDAGEYR"] >= 60]
 
-# Replace special NHANES codes with missing values
+# Replace special NHANES codes (7/9 and 77/99 = refused / don't know) with missing values
 df["DMDEDUC2"] = df["DMDEDUC2"].replace({7: float("nan"), 9: float("nan")})
 df["SMQ020"] = df["SMQ020"].replace({7: float("nan"), 9: float("nan")})
 df["DIQ010"] = df["DIQ010"].replace({7: float("nan"), 9: float("nan")})
@@ -45,7 +66,7 @@ print(df.head())
 print("\nMissing values:")
 print(df.isna().sum())
 
-#посмотреть распределение значений и коды категориальных переменных (SMQ020, DIQ010, DMDEDUC2, RIAGENDR, SLD010H).
+# Check the distribution of values and the codes of categorical variables
 print("\nCategorical variables:")
 print("\nSex:")
 print(df["RIAGENDR"].value_counts(dropna=False))
@@ -61,12 +82,9 @@ print(df["DIQ010"].value_counts(dropna=False))
 
 print("\nSleep:")
 print(df["SLD010H"].value_counts(dropna=False))
-#сохранить подготовленный датасет
-from pathlib import Path
 
-project_dir = Path(r"D:\Documents\GitHub\python-bioinformatics-learning")
-output_path = project_dir / "nhanes_cognitive_60plus.csv"
-
+# Save the prepared dataset
+output_path = processed_dir / "nhanes_cognitive_60plus.csv"
 df.to_csv(output_path, index=False)
 
 print(f"\nDataset saved to: {output_path}")
