@@ -1,0 +1,13 @@
+comparison,outcome,n,test,statistic,p_raw,effect_size_type,effect_size,median_A,median_B,cohens_d,welch_t_p,p_FDR,significant_FDR
+Sex: Female vs Male,Digit Symbol,674 vs 658,Mann-Whitney U,2.583e+05,1.865e-07,rank-biserial r,0.165,48,42,0.2864,1.935e-07,3.729e-07,True
+Sex: Female vs Male,Animal Fluency,674 vs 658,Mann-Whitney U,2.167e+05,0.4696,rank-biserial r,-0.02285,16,16,-0.03991,0.4666,0.5123,False
+Sex: Female vs Male,Delayed Recall,674 vs 658,Mann-Whitney U,2.643e+05,9.508e-10,rank-biserial r,0.1919,6,5,0.3159,1.014e-08,2.282e-09,True
+Diabetes: Diabetes vs No diabetes,Digit Symbol,315 vs 972,Mann-Whitney U,1.165e+05,1.684e-10,rank-biserial r,-0.2392,40,47,-0.4377,3.96e-12,5.052e-10,True
+Diabetes: Diabetes vs No diabetes,Animal Fluency,315 vs 972,Mann-Whitney U,1.281e+05,1.217e-05,rank-biserial r,-0.1635,15,16,-0.2854,4.051e-06,2.087e-05,True
+Diabetes: Diabetes vs No diabetes,Delayed Recall,315 vs 972,Mann-Whitney U,1.39e+05,0.0134,rank-biserial r,-0.09178,5,6,-0.1599,0.01362,0.0201,True
+Smoking history: Smoked 100+ cigarettes vs Never smoked,Digit Symbol,679 vs 653,Mann-Whitney U,2.088e+05,0.06635,rank-biserial r,-0.05812,44,46,-0.1095,0.04611,0.08846,False
+Smoking history: Smoked 100+ cigarettes vs Never smoked,Animal Fluency,679 vs 653,Mann-Whitney U,2.221e+05,0.9483,rank-biserial r,0.002052,16,16,-0.01606,0.7699,0.9483,False
+Smoking history: Smoked 100+ cigarettes vs Never smoked,Delayed Recall,679 vs 653,Mann-Whitney U,2.131e+05,0.2192,rank-biserial r,-0.03856,6,6,-0.06069,0.2686,0.263,False
+Education: 5 groups,Digit Symbol,1332,Kruskal-Wallis,436.5,3.574e-93,epsilon squared,0.328,,,,,4.289e-92,True
+Education: 5 groups,Animal Fluency,1332,Kruskal-Wallis,157,6.325e-33,epsilon squared,0.118,,,,,3.795e-32,True
+Education: 5 groups,Delayed Recall,1332,Kruskal-Wallis,103.7,1.62e-21,epsilon squared,0.0779,,,,,6.48e-21,True

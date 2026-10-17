@@ -1,0 +1,30 @@
+Characteristic,Overall
+N,1332
+"Age, years, mean (SD)",69.2 (6.8)
+"Age, years, median [IQR]","68.0 [63.0, 75.0]"
+"Sleep, hours, mean (SD)",6.9 (1.4)
+"Sleep, hours, median [IQR]","7.0 [6.0, 8.0]"
+"BMI, kg/m2, mean (SD)",29.1 (6.4)
+"BMI, kg/m2, median [IQR]","28.1 [24.6, 32.4]"
+"Digit Symbol score, mean (SD)",45.4 (17.5)
+"Digit Symbol score, median [IQR]","45.0 [33.0, 58.0]"
+"Animal Fluency score, mean (SD)",16.5 (5.5)
+"Animal Fluency score, median [IQR]","16.0 [13.0, 20.0]"
+"Delayed Recall score, mean (SD)",5.6 (2.3)
+"Delayed Recall score, median [IQR]","6.0 [4.0, 7.0]"
+"Sex, n (%)",
+    Male,658 (49.4%)
+    Female,674 (50.6%)
+"Education, n (%)",
+    <9th grade,174 (13.1%)
+    9-11th grade,196 (14.7%)
+    High school/GED,295 (22.1%)
+    Some college/AA,374 (28.1%)
+    College graduate+,293 (22.0%)
+"Smoking history, n (%)",
+    Smoked 100+ cigarettes,679 (51.0%)
+    Never smoked 100+ cigarettes,653 (49.0%)
+"Diabetes, n (%)",
+    Diabetes,315 (23.6%)
+    No diabetes,972 (73.0%)
+    Borderline,45 (3.4%)

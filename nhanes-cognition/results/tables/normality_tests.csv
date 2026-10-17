@@ -1,0 +1,4 @@
+test,mean,SD,skewness,excess_kurtosis,Shapiro_W,Shapiro_p
+Digit Symbol,45.3806,17.4782,0.0675,-0.4451,0.9958,0.001
+Animal Fluency,16.4865,5.4841,0.5488,0.5458,0.9805,0.0
+Delayed Recall,5.5803,2.2792,-0.4299,-0.2401,0.963,0.0
