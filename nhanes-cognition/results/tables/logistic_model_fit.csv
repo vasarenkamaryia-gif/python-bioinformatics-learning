@@ -1,0 +1,4 @@
+outcome,N,events,events_per_predictor,McFadden_R2,AUC
+Digit Symbol,1332,353,32.09,0.2588,0.8318
+Animal Fluency,1332,410,37.27,0.07676,0.6879
+Delayed Recall,1332,398,36.18,0.1219,0.7402
