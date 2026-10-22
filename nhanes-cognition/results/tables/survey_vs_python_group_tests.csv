@@ -1,0 +1,13 @@
+"comparison","outcome","survey_p_FDR","survey_std_difference","python_p_FDR","python_cohens_d","same_conclusion"
+"Sex: Female vs Male","Digit Symbol",0.002048,0.199,3.729e-07,0.2864,TRUE
+"Sex: Female vs Male","Animal Fluency",0.2812,-0.1061,0.5123,-0.03991,TRUE
+"Sex: Female vs Male","Delayed Recall",5.304e-05,0.3235,2.282e-09,0.3159,TRUE
+"Diabetes: Diabetes vs No diabetes","Digit Symbol",0.001474,-0.6156,5.052e-10,-0.4377,TRUE
+"Diabetes: Diabetes vs No diabetes","Animal Fluency",0.00784,-0.3499,2.087e-05,-0.2854,TRUE
+"Diabetes: Diabetes vs No diabetes","Delayed Recall",0.002048,-0.2804,0.0201,-0.1599,TRUE
+"Smoking history: Smoked 100+ cigarettes vs Never smoked","Digit Symbol",0.03646,-0.223,0.08846,-0.1095,FALSE
+"Smoking history: Smoked 100+ cigarettes vs Never smoked","Animal Fluency",0.2165,-0.1239,0.9483,-0.01606,TRUE
+"Smoking history: Smoked 100+ cigarettes vs Never smoked","Delayed Recall",0.6425,-0.02021,0.263,-0.06069,TRUE
+"Education: 5 groups","Digit Symbol",1.249e-09,1.948,4.289e-92,NA,TRUE
+"Education: 5 groups","Animal Fluency",8.934e-07,1.241,3.795e-32,NA,TRUE
+"Education: 5 groups","Delayed Recall",6.026e-05,0.7783,6.48e-21,NA,TRUE
