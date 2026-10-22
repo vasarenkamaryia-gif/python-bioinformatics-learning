@@ -1,0 +1,34 @@
+"outcome","term","odds_ratio","ci_low","ci_high","p_value","df","python_or","python_ci_low","python_ci_high","python_p","same_direction","significant_survey","significant_python","same_significance"
+"Digit Symbol","Education: <9th grade vs college graduate+",65.69,23.98,179.9,5.284e-05,6,53.61,29.29,98.11,3.781e-38,TRUE,TRUE,TRUE,TRUE
+"Digit Symbol","Education: 9-11th grade vs college graduate+",13.06,5.039,33.83,0.0005802,6,12.31,7.007,21.63,2.553e-18,TRUE,TRUE,TRUE,TRUE
+"Digit Symbol","Education: High school/GED vs college graduate+",5.749,2,16.53,0.006704,6,4.853,2.789,8.444,2.283e-08,TRUE,TRUE,TRUE,TRUE
+"Digit Symbol","Education: Some college/AA vs college graduate+",2.255,0.8469,6.005,0.08845,6,2.375,1.343,4.2,0.002952,TRUE,FALSE,TRUE,FALSE
+"Digit Symbol","Age (per 10 years)",2.768,1.639,4.675,0.00315,6,1.862,1.495,2.317,2.676e-08,TRUE,TRUE,TRUE,TRUE
+"Digit Symbol","Female vs male",0.9154,0.6155,1.361,0.6054,6,0.5763,0.4212,0.7885,0.0005702,TRUE,FALSE,TRUE,FALSE
+"Digit Symbol","Sleep (per hour)",0.9689,0.776,1.21,0.7395,6,0.9844,0.8889,1.09,0.7626,TRUE,FALSE,FALSE,TRUE
+"Digit Symbol","BMI (per 5 units)",0.9737,0.7214,1.314,0.8347,6,0.9161,0.8116,1.034,0.1561,TRUE,FALSE,FALSE,TRUE
+"Digit Symbol","Ever smoked vs never",0.6256,0.3317,1.18,0.1205,6,0.7411,0.5432,1.011,0.05861,TRUE,FALSE,FALSE,TRUE
+"Digit Symbol","Diabetes vs no diabetes",2.118,1.272,3.526,0.01134,6,1.713,1.224,2.397,0.001691,TRUE,TRUE,TRUE,TRUE
+"Digit Symbol","Borderline diabetes vs no diabetes",1.068,0.4516,2.527,0.8575,6,1.872,0.8199,4.273,0.1366,TRUE,FALSE,FALSE,TRUE
+"Animal Fluency","Education: <9th grade vs college graduate+",6.737,3.702,12.26,0.0002347,6,4.148,2.663,6.463,3.208e-10,TRUE,TRUE,TRUE,TRUE
+"Animal Fluency","Education: 9-11th grade vs college graduate+",5.216,2.397,11.35,0.002021,6,5.005,3.251,7.707,2.608e-13,TRUE,TRUE,TRUE,TRUE
+"Animal Fluency","Education: High school/GED vs college graduate+",4.023,1.759,9.201,0.00623,6,2.956,1.971,4.433,1.586e-07,TRUE,TRUE,TRUE,TRUE
+"Animal Fluency","Education: Some college/AA vs college graduate+",1.516,0.7462,3.082,0.2009,6,1.712,1.143,2.565,0.009119,TRUE,FALSE,TRUE,FALSE
+"Animal Fluency","Age (per 10 years)",2.016,1.642,2.474,0.000158,6,1.585,1.322,1.9,6.399e-07,TRUE,TRUE,TRUE,TRUE
+"Animal Fluency","Female vs male",1.032,0.5764,1.849,0.8982,6,1.023,0.7883,1.327,0.8664,TRUE,FALSE,FALSE,TRUE
+"Animal Fluency","Sleep (per hour)",1.08,0.9797,1.191,0.1011,6,1.007,0.9235,1.098,0.8783,TRUE,FALSE,FALSE,TRUE
+"Animal Fluency","BMI (per 5 units)",0.962,0.783,1.182,0.6613,6,0.9006,0.813,0.9976,0.04484,TRUE,FALSE,TRUE,FALSE
+"Animal Fluency","Ever smoked vs never",0.9529,0.7031,1.291,0.7113,6,0.9195,0.71,1.191,0.525,TRUE,FALSE,FALSE,TRUE
+"Animal Fluency","Diabetes vs no diabetes",1.676,1.063,2.644,0.03221,6,1.402,1.05,1.873,0.02205,TRUE,TRUE,TRUE,TRUE
+"Animal Fluency","Borderline diabetes vs no diabetes",1.151,0.4853,2.732,0.7036,6,1.439,0.7314,2.831,0.2918,TRUE,FALSE,FALSE,TRUE
+"Delayed Recall","Education: <9th grade vs college graduate+",2.364,0.7701,7.256,0.1096,6,3.388,2.205,5.206,2.564e-08,TRUE,FALSE,TRUE,FALSE
+"Delayed Recall","Education: 9-11th grade vs college graduate+",1.737,0.6926,4.354,0.1922,6,1.721,1.124,2.634,0.0125,TRUE,FALSE,TRUE,FALSE
+"Delayed Recall","Education: High school/GED vs college graduate+",1.27,0.5088,3.171,0.5459,6,1.486,1.006,2.195,0.04662,TRUE,FALSE,TRUE,FALSE
+"Delayed Recall","Education: Some college/AA vs college graduate+",0.7378,0.4243,1.283,0.2275,6,0.8808,0.5966,1.3,0.5229,TRUE,FALSE,FALSE,TRUE
+"Delayed Recall","Age (per 10 years)",3.461,2.139,5.6,0.0007385,6,2.608,2.152,3.16,1.358e-22,TRUE,TRUE,TRUE,TRUE
+"Delayed Recall","Female vs male",0.3873,0.2551,0.588,0.001433,6,0.4994,0.38,0.6564,6.433e-07,TRUE,TRUE,TRUE,TRUE
+"Delayed Recall","Sleep (per hour)",1.129,0.9826,1.298,0.07629,6,1.078,0.9844,1.18,0.1052,TRUE,FALSE,FALSE,TRUE
+"Delayed Recall","BMI (per 5 units)",1.015,0.8204,1.257,0.867,6,0.9333,0.8371,1.041,0.2133,FALSE,FALSE,FALSE,TRUE
+"Delayed Recall","Ever smoked vs never",0.5343,0.329,0.8678,0.01951,6,0.7853,0.5998,1.028,0.07861,TRUE,TRUE,FALSE,FALSE
+"Delayed Recall","Diabetes vs no diabetes",1.28,0.7083,2.311,0.347,6,1.118,0.8229,1.519,0.4757,TRUE,FALSE,FALSE,TRUE
+"Delayed Recall","Borderline diabetes vs no diabetes",1.694,0.6202,4.627,0.2466,6,1.72,0.8554,3.458,0.1281,TRUE,FALSE,FALSE,TRUE
